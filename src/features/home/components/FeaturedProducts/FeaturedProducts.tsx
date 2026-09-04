@@ -168,6 +168,7 @@ export function FeaturedProducts({
             iconPosition="right"
             href="/docs/CatalogoTerbolInspira.pdf"
             scroll={false}
+			target="_blank"
           >
             Ver Catálogo
           </Button>

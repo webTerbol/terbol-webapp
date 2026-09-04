@@ -48,7 +48,8 @@ export function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const isPromoterPage = pathname === "/promoter";
+  //const isPromoterPage = pathname === "/promoter";//-20260902
+  const isPromoterPage = true;//+20260902
     //const ctaHref = isPromoterPage ? env.ASESOR_URL : "/promoter"; //-20260902
   const ctaHref = env.ASESOR_URL;//+20260902
   //const ctaIcon = isPromoterPage ? <ArrowUpRight /> : <ArrowRight />;
