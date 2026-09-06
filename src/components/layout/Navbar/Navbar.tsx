@@ -48,13 +48,12 @@ export function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
 
-  //const isPromoterPage = pathname === "/promoter";//-20260902
-  const isPromoterPage = true;//+20260902
-    //const ctaHref = isPromoterPage ? env.ASESOR_URL : "/promoter"; //-20260902
-  const ctaHref = env.ASESOR_URL;//+20260902
-  //const ctaIcon = isPromoterPage ? <ArrowUpRight /> : <ArrowRight />;
-  const ctaIcon = <ArrowUpRight />;//+20260902
-
+  
+  // const isPromoterPage = pathname === "/promoter";//-20260902 
+  const isPromoterPage = true;//+20260902  
+  const ctaHref = isPromoterPage ? env.ASESOR_URL : "/promoter";
+  const ctaIcon = isPromoterPage ? <ArrowUpRight /> : <ArrowRight />;  
+  
   return (
     // <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <header className="fixed top-0 z-50 w-full bg-white h-[100px]">
