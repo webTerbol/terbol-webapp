@@ -159,6 +159,19 @@ export function FeaturedProducts({
           >
             Ver todos los productos
           </Button>
+		  
+		  <Button //+20260902
+            variant="secondary"
+            size="sm"
+            className="mt-8 md:mt-16 mx-auto text-primary-white w-full sm:w-fit ml-4"
+            icon={<ArrowRight className="w-5 h-5 text-primary-white" />}
+            iconPosition="right"
+            href="/docs/CatalogoTerbolInspira.pdf"
+            scroll={false}
+			target="_blank"
+          >
+            Ver Catálogo
+          </Button>
 
           <Button //+20260902
             variant="secondary"
